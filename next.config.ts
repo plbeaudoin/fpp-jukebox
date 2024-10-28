@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = {
+  output: 'export',
+  images: { unoptimized: true },
+  env: {
+    SUPABASE_URL: "MISSING",
+    SUPABASE_KEY: "FILL ME IN",
+  },
+}
